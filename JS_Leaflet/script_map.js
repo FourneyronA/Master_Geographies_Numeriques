@@ -1,29 +1,21 @@
+// FOND DE CARTE 
 var map = L.map('map');
-
 var osmUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-
 var osmAttrib = 'Map data © OpenStreetMap Contributeur';
-
 var osm = new L.TileLayer(osmUrl, {attribution: osmAttrib}).addTo(map);
-
 // définir les paramètre de visualisation de la carte
-map.setView([45.72,4.88],12);
+map.setView([45.72,4.88],12);// map.setView([Lattitude,Longitude],Niveau de Zoom); (Niveau de zoom = )
 
-
-// ajouter un maker
-var marker = L.marker([45.7238, 4.8324]);
-marker.addTo(map);
-// map.setView([Lattitude,Longitude],Niveau de Zoom); (Niveau de zoom = )
-
-
-
-// icone personnaliser 
+// CREATION ICONE PERSONALISER
 var schoolIcon = L.icon({
     iconUrl: 'leaflet/images/marker-icon.png'
- 
 });
 
-// 
+// AJOUT POINT SUR CARTE 
+var marker = L.marker([45.7238, 4.8324]);
+marker.addTo(map);
+
+// AJOUT CERCLE A PARTIR D'UN POINT
 var circle_marker = L.circleMarker([45.7238, 4.8324], {
     radius:25,
     color : '#7c1e70',
