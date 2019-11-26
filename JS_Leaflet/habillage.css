@@ -1,0 +1,56 @@
+body{
+    background-color : #333333 ;
+}
+
+h1 { 
+    font-size: 200%;
+    color : #7c1e70;
+    font-style: oblique;
+}
+
+h2 { 
+    font-size: 150%;
+    color : #eb6dda;
+    font-style: oblique;
+}
+
+body {
+    height: 500px;
+    width: 98%;
+    margin: auto;
+}
+
+p { 
+    color : #eb6dda;
+}
+
+ul {
+    color: #eb6dda;
+    font-style: italic;
+}
+
+#map {
+    width: 100%;
+    height: 650px;
+}
+
+#alertBox{
+    position:absolute;
+    top:100px;
+    left:100px;
+    border:solid 1px rgba(125, 29, 163, 0.425);
+    background-color: rgba(130, 63, 168, 0.637);
+    padding: 50px;
+    visibility: hidden;
+}
+#alertClose{
+    position: absolute;
+    right:0;
+    top: 0;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    width: 1em;
+    text-align: center; 
+    cursor: pointer;
+}
