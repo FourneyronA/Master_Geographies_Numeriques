@@ -4,8 +4,8 @@ import requests
 import json
 from yattag import Doc, indent
 
-APP_ID = "1uzNinZ9iqcQcp9REnsf"
-APP_CODE = "tHNUpzmaJKcxiJdNJ2VM6Q"
+APP_ID = "VOTRE APP_ID"
+APP_CODE = "VOTRE APP_CODE"
 
 #
 # Fonctions outils
