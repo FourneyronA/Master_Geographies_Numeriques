@@ -67,3 +67,4 @@ HAVING count(*) > 2500;
 SELECT * FROM equipement
 
 LIMIT 5
+
