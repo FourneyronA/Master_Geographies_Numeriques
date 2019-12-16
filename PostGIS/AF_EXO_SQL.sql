@@ -142,3 +142,5 @@ a se moment on a un retour sur les variables indexés
 -- Creation d'index
 create index idx_parcelle_geom on parcelle using GIST (geom);
 create index equipement_geom_idx on equipement using GIST (geom);
+
+-- Pensez a faire des requetes 
