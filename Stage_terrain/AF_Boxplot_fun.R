@@ -37,11 +37,7 @@
   Grille <- st_read(dsn="GRILLE_GCP/Grille_homogène_10GCP.shp", stringsAsFactors = FALSE)
   Double_grid_donnee_H<- st_read(dsn="GCPs_MNS_DoubleGrid_HOMOGENE/GCPs_MNS_HOMOGENE.shp", stringsAsFactors = FALSE)
   
-  ORTHO <- raster("MNE_DG_GCP_52_COUPLE.tif")
-  plot(ORTHO)
-  
-  ORTHO_L93 = projectRaster(ORTHO, crs = "+init=epsg:2154") 
-  plot(ORTHO_L93+Circular_donnee_H$Elevation)
+
 # . -------------------------------------------------------------------------- =============
 # 3 - Remise en forme des données ====
 # . -------------------------------------------------------------------------- =============
